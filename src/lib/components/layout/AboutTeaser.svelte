@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Marc Fluvia",
+		role: "Co-founder",
+		image: "/generated/image-a-professional-male-founder-in-a-modern-.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"After closing dozens of real estate deals, I kept seeing the same pattern: PE firms knew how to evaluate the investment thesis, but they lacked the operational expertise to unlock the hidden value. We started Kenzu because the best returns don't come from financial engineering—they come from operators who know how to execute on the ground."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
