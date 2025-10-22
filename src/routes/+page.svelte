@@ -6,16 +6,45 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	centered={true}
+	title="Accelerate real estate value creation with specialized operational expertise"
+	subtitle="Kenzu deploys proven operators who combine deal execution experience with property-level expertise to increase NOI by 15-30% within 18 months."
+	customers={[
+		{
+			name: "Jennifer Martinez",
+			position: "Managing Director, Brookfield Asset Management",
+			imageSrc: "/generated/image-editorial-style-environmental-portrait-o.webp"
+		},
+		{
+			name: "Michael Chen",
+			position: "Partner, Blackstone Real Estate",
+			imageSrc: "/generated/image-editorial-environmental-portrait-of-a-pr.webp"
+		},
+		{
+			name: "Rebecca Thompson",
+			position: "VP Portfolio Management, Carlyle Group",
+			imageSrc: "/generated/image-editorial-portrait-of-a-professional-wom.webp"
+		},
+		{
+			name: "David Richardson",
+			position: "Senior Partner, Brookfield Capital",
+			imageSrc: "/generated/image-editorial-business-portrait-of-a-profess.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/blackstone.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/brookfield.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/kkr.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/carlyle.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
